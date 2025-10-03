@@ -10,4 +10,4 @@ def safe_divide(numerator, denominator):
         result = num / den
         return True, result  # FIXED: Return tuple (True, result)
     except ZeroDivisionError:
-        return False, "Error: Cannot divide by zero"  # Return tuple (False, error)
+        return False, "Error: Cannot divide by zero."  # Return tuple (False, error)
