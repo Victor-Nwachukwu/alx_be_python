@@ -8,6 +8,6 @@ def safe_divide(numerator, denominator):
     try:
         # Perform division, handling division by zero
         result = num / den
-        return True, result  # FIXED: Return tuple (True, result)
+        return result  # FIXED: Return tuple (True, result)
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."  # Return tuple (False, error)
