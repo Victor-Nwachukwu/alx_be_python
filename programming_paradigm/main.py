@@ -9,13 +9,12 @@ def main():
     numerator = sys.argv[1]
     denominator = sys.argv[2]
 
-    result = safe_divide(numerator, denominator)
+    success, result = safe_divide(numerator, denominator)
 
-    # Handle both success and error cases properly
-    if isinstance(result, str):  # Means we got an error message
-        print(result)
-    else:
+    if success:
         print(f"The result of the division is {result}")
+    else:
+        print(result)
 
 if __name__ == "__main__":
     main()
